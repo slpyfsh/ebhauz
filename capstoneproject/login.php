@@ -118,7 +118,7 @@ window.addEventListener('DOMContentLoaded', () => {
         </p>
 
         <div class="back-link-container">
-            <a href="viewer.php" class="back-link">
+            <a href="index.php" class="back-link">
                 &larr; Go back
             </a>
         </div>

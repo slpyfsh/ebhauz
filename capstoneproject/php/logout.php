@@ -6,5 +6,5 @@ session_destroy();
 // Optional: clear the remember_me cookie
 setcookie('remember_me', '', time() - 3600, '/');
 
-header("Location: ../viewer.php");
+header("Location: ../index.php");
 exit;

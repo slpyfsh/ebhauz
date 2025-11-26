@@ -17,7 +17,7 @@ if ($userRole === 'owner') {
 
     <a href="<?php echo $logoLink; ?>" class="nav-logo">EBHaus</a>
 
-    <?php if ($currentPage === 'viewer.php'): ?>
+    <?php if ($currentPage === 'index.php'): ?>
         <div class="nav-search">
             <input type="text" id="navSearchInput" placeholder="Search..." />
         </div>
