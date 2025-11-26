@@ -1,0 +1,91 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #4e73df, #1cc88a);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 1rem;
+    font-size: 16px; /* Base font size increased */
+}
+
+.form-container {
+    background: #fff;
+    padding: 2.5rem; /* More padding */
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+    width: 100%;
+    
+    /* INCREASED WIDTH FOR DESKTOP */
+    max-width: 600px; 
+    transition: width 0.3s ease;
+}
+
+.form-container h2 {
+    margin-bottom: 2rem;
+    text-align: center;
+    color: #333;
+    font-size: 2rem; /* Larger Title */
+}
+
+.form-group {
+    margin-bottom: 1.5rem; /* More spacing between inputs */
+    position: relative;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: #444;
+    font-size: 1rem;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="number"],
+input[type="file"] {
+    width: 100%;
+    padding: 12px 15px; /* Taller inputs */
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1.1rem; /* Larger text inside input */
+    transition: border-color 0.2s;
+}
+
+input:focus {
+    border-color: #4e73df;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(78,115,223,0.1);
+}
+
+button {
+    width: 100%;
+    padding: 14px; /* Larger button */
+    background-color: #4e73df;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    margin-top: 10px;
+}
+
+button:hover { background-color: #375ac0; }
+
+.error-message { color: #e74a3b; font-size: 0.9rem; margin-top: 5px; }
+
+/* Mobile Adjustment */
+@media (max-width: 480px) {
+    .form-container {
+        padding: 1.5rem;
+    }
+    h2 { font-size: 1.5rem; }
+}
